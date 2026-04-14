@@ -82,7 +82,7 @@ resource "aap_workflow_job" "configure_vms" {
   workflow_job_template_id = 1279
 
   extra_vars = jsonencode({
-    vm_names          = local.vm_names_csv
+    vm_name          = local.vm_names_csv
     ticket_number     = var.ticket_number
     shadowman_provision_hypervisor = "VMWare"
   })
