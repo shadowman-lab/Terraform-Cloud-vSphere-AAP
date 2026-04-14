@@ -1,3 +1,3 @@
-# Ansible-Terraform-vSphere
+# Terraform-Cloud-vSphere-AAP
 
-Repo for Terraform files to be deployed by Ansible to vSphere
+Terraform files for Terraform Cloud usage using AAP Provider
