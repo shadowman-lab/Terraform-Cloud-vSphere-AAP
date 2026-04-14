@@ -84,7 +84,7 @@ resource "aap_workflow_job" "configure_vms" {
   extra_vars = jsonencode({
     vm_names          = local.vm_names_csv
     ticket_number     = var.ticket_number
-    shadowman_provision_hypervisor = "AWS"
+    shadowman_provision_hypervisor = "VMWare"
   })
 
   lifecycle {
