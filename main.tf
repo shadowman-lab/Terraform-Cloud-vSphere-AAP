@@ -80,6 +80,8 @@ resource "terraform_data" "vm_change_trigger" {
 
 resource "aap_workflow_job" "configure_vms" {
   workflow_job_template_id = 1279
+  wait_for_completion = true
+  wait_for_completion_timeout_seconds = 1200
 
   extra_vars = jsonencode({
     vm_name          = local.vm_names_csv
