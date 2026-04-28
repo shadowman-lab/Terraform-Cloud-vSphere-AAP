@@ -9,6 +9,6 @@ output "aap_job_url" {
   value = aap_workflow_job.configure_vms.url
 }
 
-output "aap_job_url" {
+output "aap_job_status" {
   value = aap_workflow_job.configure_vms.status
 }
